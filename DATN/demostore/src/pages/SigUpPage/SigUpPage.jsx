@@ -56,12 +56,12 @@ const SignUpPage = () => {
   }
 
   return (
-    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0, 0, 0, 0.53)', height: '100vh' }}>
-      <div style={{ width: '800px', height: '445px', borderRadius: '6px', background: '#fff', display: 'flex' }}>
+   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(249 213 133)', height: '100vh' }}>
+            <div style={{ width: '800px', height: '445px', borderRadius: '16px', background: '#fff', display: 'flex' }}>
         <WrapperContainerLeft>
-          <h1>Xin chào</h1>
-          <p>Đăng nhập vào tạo tài khoản</p>
-          <InputForm style={{ marginBottom: '10px' }} placeholder="abc@gmail.com" value={email} onChange={handleOnchangeEmail} />
+                    <h1 style={{ fontFamily: "Inter,Helvetica,Arial,sans-serif" }}>Xin Chào, Đăng nhập hoặc tạo tài khoản</h1>
+                    <p style={{ fontFamily: "Inter,Helvetica,Arial,sans-serif", marginTop: "-5px" }}>Nhập email và mật khẩu</p>
+          <InputForm style={{ marginTop: '20px', fontsize: '20px' }} placeholder="abc@gmail.com" value={email} onChange={handleOnchangeEmail} />
           <div style={{ position: 'relative' }}>
             <span
               onClick={() => setIsShowPassword(!isShowPassword)}
@@ -79,7 +79,7 @@ const SignUpPage = () => {
                 )
               }
             </span>
-            <InputForm placeholder="password" style={{ marginBottom: '10px' }} type={isShowPassword ? "text" : "password"}
+            <InputForm placeholder="password" style={{ marginTop: '10px', fontsize: '20px' }} type={isShowPassword ? "text" : "password"}
               value={password} onChange={handleOnchangePassword} />
           </div>
           <div style={{ position: 'relative' }}>
@@ -99,7 +99,7 @@ const SignUpPage = () => {
                 )
               }
             </span>
-            <InputForm placeholder="comfirm password" type={isShowConfirmPassword ? "text" : "password"}
+            <InputForm style={{ marginTop: '10px', fontsize: '20px' }} placeholder="comfirm password" type={isShowConfirmPassword ? "text" : "password"}
               value={confirmPassword} onChange={handleOnchangeConfirmPassword}
             />
           </div>
@@ -114,18 +114,17 @@ const SignUpPage = () => {
                 height: '48px',
                 width: '100%',
                 border: 'none',
-                borderRadius: '4px',
+                borderRadius: '10px',
                 margin: '26px 0 10px'
               }}
-              textbutton={'Đăng ký'}
-              styleTextButton={{ color: '#fff', fontSize: '15px', fontWeight: '700' }}
+              textbutton={'Tiếp tục'}
+              styleTextButton={{ color: '#fff', fontSize: '15px', fontWeight: '700',}}
             ></ButtonComponent>
        
-          <p>Bạn đã có tài khoản? <WrapperTextLight onClick={handleNavigateSignIn}> Đăng nhập</WrapperTextLight></p>
+          <p style={{ fontFamily: "Inter,Helvetica,Arial,sans-serif"}} >Bạn đã có tài khoản? <WrapperTextLight onClick={handleNavigateSignIn}> Đăng nhập</WrapperTextLight></p>
         </WrapperContainerLeft>
         <WrapperContainerRight>
-          <Image src={imageLogo} preview={false} alt="iamge-logo" height="203px" width="203px" />
-          <h4>Mua sắm tại FourBee</h4>
+          <Image src={imageLogo} preview={false} alt="iamge-logo" style={{ height: "320px", width: "320px", margin: "60px -10px" }} />
         </WrapperContainerRight>
       </div>
     </div >
