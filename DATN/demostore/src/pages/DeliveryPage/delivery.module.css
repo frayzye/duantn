@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,700&display=swap');
+body{
+    background-color:#FFFFFF ;
+    
+}
+
+
+
+
+/*  delivery */
+.delivery_content_input_top_row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.delivery_content_row{
+    display: flex;
+}
+
+.containero {
+    margin-left: 50px;
+    margin-top: 50px;
+
+}
+
+.delivery_top {
+    padding-bottom: 20px;
+
+}
+
+.delivery_top {
+    font-size: 22px;
+    background: -webkit-linear-gradient(#F3B850, #FF954D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.delivery_content_left {
+    width: 50%;
+    padding-right: 160px;
+}
+
+.delivery_content_left p {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.delivery_content_left label {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.delivery_content_input_top {
+    justify-content: space-between;
+}
+
+.delivery_content_input_top_item {
+    width: 50%;
+    padding-left: 5px;
+}
+
+.delivery_content_input_top_item input {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #dddddd;
+
+}
+
+.delivery_content_input_bottom_item input {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #dddddd;
+
+}
+
+.delivery_content_left_bottom p {
+     margin-top: 20px;
+    display: inline-block;
+}
+
+.delivery_content_left_bottom {
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.delivery_content_left_bottom .button {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(11, 11, 11);
+    outline: 2px solid rgb(216, 216, 216);
+    padding: 20px 30px;
+    position: relative;
+    left: 80px;
+    top: 20px;
+    overflow: hidden;
+    transition: color 1s;
+}
+
+.delivery_content_left_bottom .button:hover {
+    color: #fff;
+}
+
+.delivery_content_left_bottom .button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 150%;
+    height: 100%;
+    background-color: #F7AD4F;
+    transform: scaleX(0) skewX(35deg);
+    transform-origin: left;
+    z-index: -1;
+    transition: transform 1s;
+}
+
+.delivery_content_left_bottom .button:hover::before {
+    transform: scaleX(1) skewX(35deg);
+}
+
+.delivery_content_right {
+    width: 48%;
+    border-left: 2px solid #dddddd;
+    padding-left: 12px;
+    height: auto;
+}
+
+.delivery_content_right table {
+    width: 100%;
+
+}
+.delivery_content_right table p {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+.delivery_content_right table tr th:first-child {
+    text-align: left;
+}
+
+.delivery_content_right table tr th {
+    padding-bottom: 12px;
+
+
+}
+
+.delivery_content_right table tr th:last-child {
+    text-align: left;
+}
+
+.delivery_content_right table tr td {
+    padding: 6px 0;
+border-top: 2px solid #dddddd;
+}
+
+.delivery_content_right table tr:nth-child(4) {
+    border-top: 2px solid #dddddd;
+}
+
+.delivery_content_right table tr td:last-child {
+    text-align: left;
+}
+
+.delivery_content_right table tr td:first-child {
+    text-align: left;
+}
+
+
+
+/*  payment */
+
+.payment_content {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.thanhtoan {
+    padding-bottom: 20px;
+}
+
+.payment_content .thanhtoan h1 {
+    font-size: 32px;
+    background: -webkit-linear-gradient(#F3B850, #FF954D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.payment_content_left {
+    border: 1px solid #FFFFFF;
+    width: 60%;
+    height: 170px;
+    padding: 10px 30px;
+
+}
+
+.payment_content_left_method_payment {
+    padding-top: 10px;
+}
+
+.payment_content_left_method_payment p {
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.payment_content_left_method_payment_item {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.payment_content_left_method_payment_item label {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}

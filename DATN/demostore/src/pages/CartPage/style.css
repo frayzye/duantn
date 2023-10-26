@@ -1,0 +1,85 @@
+body{
+    background-color:#E5E7EB ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container{
+    background-color: #ffff;
+    width: 90%;
+    margin: 30px auto;
+    border-radius: 20px;
+}
+.content{
+    display: flex;
+    border-bottom: 0.5px solid black;
+}
+.content h3{
+    width: calc(50% - 20px);
+    font-size: 2vh;
+}
+.content-main{
+    display: flex;
+}
+.content-deital{
+    width: 80%;
+    margin:0 20px;
+}
+table{
+    border-collapse:collapse;
+    width: 100%;
+    margin:20px  auto;
+}
+th, td{
+    text-align:left;
+    padding:10px;
+}
+th{
+    color: #a7a5a5;
+}
+td button{
+    border: none;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+td button:hover{
+    background-color: rgb(179, 178, 178);
+    color: white;
+}
+.content-deital img{
+    width: 30%;
+    aspect-ratio: 2/2;
+    object-fit: cover;
+}
+
+.content-button{
+    background-color: #FF954F;
+    border-radius: 5px;
+    margin: 10px;
+    width: 20%;
+    border: 0.2px solid rgb(170, 168, 168);
+}
+.content-button h3{
+    text-align: center;
+    padding: 50px 0;
+    color: black;
+}
+.content-button span{
+    color: white;
+}
+.content-button div{
+    width: 50%;
+}
+.content-button button{
+    width: 200px;
+    padding: 10px;
+    margin: 20px 70px;
+    border: none;
+}
+.content-button .button_1:hover{
+    background-color:#F4B950 ;
+    box-shadow: 2px 2px 2px;
+}
+.content-button .button_2:hover{
+    background-color:rgb(38, 185, 238) ;
+    box-shadow: 2px 2px 2px;
+}
