@@ -61,13 +61,13 @@ const SignInPage = () => {
   }
 
   return (
-    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0, 0, 0, 0.53)', height: '100vh' }}>
-      <div style={{ width: '800px', height: '445px', borderRadius: '6px', background: '#fff', display: 'flex' }}>
+   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(249 213 133)', height: '100vh' }}>
+            <div style={{ width: '800px', height: '445px', borderRadius: '16px', background: '#fff', display: 'flex' }}>
         <WrapperContainerLeft>
-          <h1>Xin chào</h1>
-          <p>Đăng nhập vào tạo tài khoản</p>
-          <InputForm style={{ marginBottom: '10px' }} placeholder="abc@gmail.com" value={email} onChange={handleOnchangeEmail} />
-          <div style={{ position: 'relative' }}>
+                    <h1 style={{ fontFamily: "Inter,Helvetica,Arial,sans-serif" }}>Xin Chào, đăng nhập bằng email</h1>
+                    <p style={{ fontFamily: "Inter,Helvetica,Arial,sans-serif", marginTop: "-10px" }}>Nhập email và mật khẩu</p>
+                    <InputForm style={{ marginBottom: '10px', fontsize: '20px' }} placeholder="abc@gmail.com" />
+                              <InputForm placeholder="password" />
             <span
               onClick={() => setIsShowPassword(!isShowPassword)}
               style={{
@@ -110,12 +110,11 @@ const SignInPage = () => {
               styleTextButton={{ color: '#fff', fontSize: '15px', fontWeight: '700' }}
             ></ButtonComponent>
    
-          <p><WrapperTextLight>Quên mật khẩu?</WrapperTextLight></p>
-          <p>Chưa có tài khoản? <WrapperTextLight onClick={handleNavigateSignUp}> Tạo tài khoản</WrapperTextLight></p>
+                    <p>,<WrapperTextRight style={{ fontFamily: "Inter,Helvetica,Arial,sans-serif" }} >Quên Mật Khẩu </WrapperTextRight></p>
+          <p style={{ fontFamily: "Inter,Helvetica,Arial,sans-serif" }}>Chưa Có Tài Khoản? <WrapperTextLight onClick={handleNavigateSignUp}> Tạo tài khoản</WrapperTextLight></p>
         </WrapperContainerLeft>
         <WrapperContainerRight>
-          <Image src={imageLogo} preview={false} alt="iamge-logo" height="203px" width="203px" />
-          <h4>Mua sắm tại Foubee</h4>
+                    <Image src={imageLogo} preview={false} alt="image-logo" style={{ height: "320px", width: "320px", margin: "60px -10px"}} />
         </WrapperContainerRight>
       </div>
     </div >
